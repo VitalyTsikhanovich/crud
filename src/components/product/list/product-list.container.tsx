@@ -14,7 +14,7 @@ export const ProductListContainer: FC = memo(() => {
     return (
         <div>
             {loading && <div>Loading...</div>}
-            {error && <div>{error}</div>}
+            {error && <div>Something went wrong! {error}</div>}
             {!loading && !error && <ProductListComponent products={products}/>}
         </div>
 

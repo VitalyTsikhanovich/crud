@@ -27,3 +27,36 @@ export const Img = styled.img`
   object-fit: contain;
   transform: scale(0.8);
 `
+export const Description = styled.p`
+  grid-area: 2 / 2 / auto / auto;
+  margin: 0px;
+  align-self: center;
+  font-size: 0.9rem;
+  line-height: 1.3;
+  padding: 5px;
+  overflow-wrap: break-word;
+`
+
+export const Title = styled.h3`
+  grid-area: 1 / 2 / auto / auto;
+  margin: 0px;
+  align-self: center;
+  font-size: 1.3rem;
+  line-height: 1;
+  padding: 5px;
+  overflow-wrap: break-word;
+  flex: 1 1 0%;
+overflow: hidden;
+`
+
+export const Price = styled.span`
+  grid-row: 1 / span 2;
+  display: grid;
+  align-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(246, 180, 44);
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.5rem;
+`

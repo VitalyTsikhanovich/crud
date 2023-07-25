@@ -3,7 +3,7 @@ import {ProductListContainer} from "./components/product/list/product-list.conta
 
 function App() {
     return (
-<ProductListContainer/>
+        <ProductListContainer/>
     );
 }
 

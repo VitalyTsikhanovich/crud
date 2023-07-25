@@ -11,12 +11,13 @@ export const ProductListComponent: FC<TProductListComponent> = memo(({products})
 
 
     return (
-       <>
+        <>
             {products.map((p) => (
-                <ProductCard key={p.id} id={p.id} title={p.title} price={p.price} description={p.description} category={p.category}
+                <ProductCard key={p.id} id={p.id} title={p.title} price={p.price} description={p.description}
+                             category={p.category}
                              image={p.image} rating={p.rating}/>
             ))}
-       </>
+        </>
 
     )
 })
