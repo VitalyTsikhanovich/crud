@@ -55,7 +55,7 @@ export const Price = styled.span`
   align-content: center;
   width: 100%;
   height: 100%;
-  background-color: rgb(246, 180, 44);
+  background-color: rgb(14, 184, 222);
   text-align: center;
   font-weight: 700;
   font-size: 1.5rem;
