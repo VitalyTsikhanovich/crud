@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const ProductCardContainer = styled.div`
-  //display: flex;
+  display: flex;
   border: 1px solid #ddd;
   border-radius: 8px;
   padding: 16px;
@@ -39,12 +39,12 @@ export const ProductImageElement = styled.img`
   width: 100%;
   height: auto;
   object-fit: cover;
-  
+
   @media (max-width: 576px) {
     max-width: 150px;
     max-height: 150px;
     object-fit: contain;
-    
+
   }
 `;
 
@@ -67,7 +67,7 @@ export const DescriptionContainer = styled.div`
   position: relative;
   max-height: 100%;
   //overflow: hidden;
-  transition: max-height 0.9s ease; 
+  transition: max-height 0.9s ease;
   @media (max-width: 576px) {
     max-height: none;
   }
