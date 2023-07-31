@@ -1,6 +1,13 @@
 import {FC, memo} from "react";
 import {ProductModel} from "../../../models/product.model";
-import {Container,  Description, Img, Price, Title} from "../../../assets/styles/product-card.styles";
+// import {Container, Img, Price, Title} from "../../../assets/styles/product-card.styles";
+import {Description} from "../../Description";
+import {
+    ProductCardContainer,
+    ProductDetails,
+    ProductImage,
+    ProductImageElement, ProductPrice, ProductTitle
+} from "../../../assets/styles/product-card.styles";
 
 
 type TProductCard = ProductModel
@@ -8,11 +15,19 @@ export const ProductCard: FC<TProductCard> = memo(({title, image, price, descrip
 
 
     return (
-        <Container>
-            <Img src={image} alt="image"/>
-            <Title>{title}</Title>
-            <Price>{price}$</Price>
-            <Description>{description}</Description>
-        </Container>
+        <ProductCardContainer>
+            <ProductImage>
+                <ProductImageElement src={image} alt="image"/>
+
+            </ProductImage>
+            <ProductDetails>
+                <ProductTitle>{title}</ProductTitle>
+                <Description text={description}/>
+
+            </ProductDetails>
+            <ProductPrice>{price}$</ProductPrice>
+
+            {/*<Description>{description}</Description>*/}
+        </ProductCardContainer>
     )
 })
