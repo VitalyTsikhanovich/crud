@@ -27,3 +27,16 @@ export const fetchProductsApi = createAsyncThunk<ProductModel[], void>(
             return response.data;
     }
 );
+export const createProductApi = createAsyncThunk<Required<ProductModel> ,Partial<ProductModel>>(
+    "product/createProduct",
+    async function (product) {
+        const response = await axios.post(PRODUCTS_URL, product);
+        return response.data
+    }
+);
+
+
+
+
+
+

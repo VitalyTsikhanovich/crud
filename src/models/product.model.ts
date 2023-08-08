@@ -2,7 +2,7 @@
 
 
 export interface ProductModel {
-    id: number,
+    id: string,
     title:string,
     price: number,
     description: string,

@@ -1,7 +1,7 @@
 import {ProductModel} from "../models/product.model";
 
 
-export const productListData: ProductModel[] = [
+export const productListData: any = [
 
     {
         "id": 1,
