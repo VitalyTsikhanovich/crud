@@ -1,13 +1,13 @@
 import {FC, memo} from "react";
 import {ProductModel} from "../../../models/product.model";
-import {ProductCard} from "../card/product-card.component";
+import {ProductCard} from "../Card/ProductCard";
 
 
 type TProductListComponent = {
     products: ProductModel[]
 }
 
-export const ProductListComponent: FC<TProductListComponent> = memo(({products}) => {
+export const ProductList: FC<TProductListComponent> = memo(({products}) => {
 
 
     return (

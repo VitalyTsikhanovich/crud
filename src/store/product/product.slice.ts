@@ -1,7 +1,6 @@
-import {createSlice, Draft, PayloadAction} from "@reduxjs/toolkit";
+import {createSlice,  PayloadAction} from "@reduxjs/toolkit";
 import {createProductApi, fetchProductsApi} from "../../services/product-api.service";
 import {ProductModel} from "../../models/product.model";
-import {Writable} from "stream";
 
 interface ProductState {
     products: ProductModel[];
@@ -19,9 +18,9 @@ const productSlice = createSlice({
     name: "product",
     initialState,
     reducers: {
-        addProductLocally: (state, action:PayloadAction<ProductModel>) => {
-            state.products.unshift(action.payload);
-        },
+        // addProductLocally: (state, action:PayloadAction<ProductModel>) => {
+        //     state.products.unshift(action.payload);
+        // },
     },
     extraReducers: (builder) => {
         builder
@@ -42,8 +41,7 @@ const productSlice = createSlice({
                 state.error = null;
             })
             .addCase(createProductApi.fulfilled, (state, action) => {
-                state.products.push(action.payload)
-
+                state.products.unshift(action.payload)
                 state.loading = false;
                 state.error = null;
 
@@ -55,5 +53,5 @@ const productSlice = createSlice({
     },
 
 });
-export const { addProductLocally } = productSlice.actions;
+// export const { addProductLocally } = productSlice.actions;
 export default productSlice.reducer;

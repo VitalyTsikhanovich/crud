@@ -1,6 +1,5 @@
 import {FC, memo} from "react";
 import {ProductModel} from "../../../models/product.model";
-// import {Container, Img, Price, Title} from "../../../assets/styles/product-card.styles";
 import {Description} from "../../Description";
 import {
     ProductCardContainer,

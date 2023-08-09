@@ -1,20 +1,4 @@
-// import axios, {AxiosResponse} from "axios";
-// import {PRODUCTS_URL} from "../constants/api.constants";
-// import {ProductModel} from "../models/product.model";
-// import {store} from "../store/store";
-// import {setProductAction} from "../store/product/product.slice";
-//
-//
-// export async function fetchProductsApi():Promise<AxiosResponse<ProductModel[]>>{
-//
-//         return await axios.get(PRODUCTS_URL)
-//             // .then((response)=>{
-//             //         store.dispatch(setProductAction(response.data))
-//             //         return response
-//             // })
-//
-// }
-// product-api.service.ts
+
 import axios, { AxiosResponse } from "axios";
 import { createAsyncThunk } from "@reduxjs/toolkit";
 import { ProductModel } from "../models/product.model";

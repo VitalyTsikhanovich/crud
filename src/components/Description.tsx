@@ -18,13 +18,13 @@ export const Description: FC<TDescription> = memo(({text, maxLength = MAX_LENGTH
     const croppedText = text.slice(0, maxLength)
 
     return (
-        <DescriptionContainer >
+        <DescriptionContainer>
             <DescriptionText>{show ? text : croppedText + (text.length < maxLength ? '' : '...')}</DescriptionText>
             {text.length > maxLength && (
-                <DescriptionButton  onClick={handleShow}>{show ? "Hide Details" : "Show Details"}</DescriptionButton >
+                <DescriptionButton onClick={handleShow}>{show ? "Hide Details" : "Show Details"}</DescriptionButton>
             )
             }
-        </DescriptionContainer >
+        </DescriptionContainer>
     );
 })
 

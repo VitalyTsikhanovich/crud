@@ -1,11 +1,12 @@
-import {ButtonHTMLAttributes, FC} from "react";
+import {ButtonHTMLAttributes, FC, memo} from "react";
+import {StyledButton} from "../assets/styles/button.styles";
 
 type TButton =ButtonHTMLAttributes<HTMLButtonElement> &{
     className: string
 }
-export const Button :FC<TButton> =({className, ...rest})=>{
+export const Button :FC<TButton> =memo(({className, ...rest})=>{
 
-    return <button className={className} {...rest} ></button>
+    return <StyledButton className={className} {...rest} ></StyledButton>
 
 
- }
+ })
