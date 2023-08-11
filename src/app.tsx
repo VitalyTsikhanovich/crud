@@ -1,10 +1,16 @@
 import React from 'react';
-import {ProductListContainer} from "./components/product/List/ProductListContainer";
+import {BrowserRouter} from "react-router-dom";
+import AppRoutes from "./components/Routes";
 
 function App() {
     return (
-        <ProductListContainer/>
+        <BrowserRouter>
+            <AppRoutes/>
+        </BrowserRouter>
     );
 }
 
 export default App;
+
+
+

@@ -8,6 +8,7 @@ export const InputContainer = styled.input`
   border: 1px solid #ccc;
   border-radius: 4px;
   font-size: 1rem;
+  white-space: pre-wrap;
 `;
 export const InputLabel = styled.label`
   margin-bottom: 8px;

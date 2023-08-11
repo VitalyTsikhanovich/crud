@@ -6,10 +6,12 @@ import {ProductModel} from "../models/product.model";
 import {createProductApi} from "../services/product-api.service";
 import {AppDispatch} from "../store/store";
 import {useDispatch} from "react-redux";
+import { useNavigate} from "react-router-dom";
 // import {addProductLocally} from "../store/product/product.slice";
 
 export const ProductCreationContainer:FC = memo(() => {
     const [visible, setVisible] = useState(false)
+    const navigate = useNavigate();
     const onClose = () => {
         setVisible(false)
     }
@@ -31,6 +33,8 @@ export const ProductCreationContainer:FC = memo(() => {
         //     }
         // }
         // dispatch(addProductLocally(newProduct))
+
+
         onClose()
     };
     return (

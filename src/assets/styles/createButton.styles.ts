@@ -22,4 +22,11 @@ export const Button = styled.button`
   &:hover {
     background-color: #47a2fa;
   }
+  @media (max-width: 576px) {
+    .add-button {
+      width: 20px;
+      height: 20px;
+      font-size: 10px;
+    }
+  }
 `;
