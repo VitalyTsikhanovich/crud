@@ -1,5 +1,5 @@
 import {ChangeEvent, FC, InputHTMLAttributes, memo, useState} from "react";
-import {InputContainer} from "../assets/styles/input.styles";
+import {InputContainer} from "./input.styles";
 
 
 type TInput = InputHTMLAttributes<HTMLInputElement> & {

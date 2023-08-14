@@ -1,5 +1,5 @@
 import {ButtonHTMLAttributes, FC, memo} from "react";
-import {StyledButton} from "../assets/styles/button.styles";
+import {StyledButton} from "./button.styles";
 
 type TButton =ButtonHTMLAttributes<HTMLButtonElement> &{
     className: string

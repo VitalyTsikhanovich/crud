@@ -1,7 +1,7 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import {ProductDetailsPage} from "../pages/ProductDetailsPage";
-import {ProductListContainer} from "./product/List/ProductListContainer";
+import {ProductListContainer} from "./product/List/ProductListContainer/ProductListContainer";
 
 function AppRoutes() {
     return (

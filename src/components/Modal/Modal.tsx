@@ -1,5 +1,5 @@
 import {FC, memo, ReactNode} from "react";
-import {ModalBackdrop, ModalCloseIcon, ModalContent, ModalHeader, ModalTitle} from "../assets/styles/modal.styles";
+import {ModalBackdrop, ModalCloseIcon, ModalContent, ModalHeader, ModalTitle} from "./modal.styles";
 
 
 type TModal = {

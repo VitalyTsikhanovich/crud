@@ -1,17 +1,15 @@
-import {Modal} from "./Modal";
-import {CreateButton} from "./CreateButton";
+import {Modal} from "./Modal/Modal";
+import {CreateButton} from "./CreateButton/CreateButton";
 import {FC, memo, useId, useState} from "react";
-import {ProductCreationForm} from "./ProductCreationForm";
+import {ProductCreationForm} from "./ProductCreateForm/ProductCreationForm";
 import {ProductModel} from "../models/product.model";
 import {createProductApi} from "../services/product-api.service";
 import {AppDispatch} from "../store/store";
 import {useDispatch} from "react-redux";
-import { useNavigate} from "react-router-dom";
 // import {addProductLocally} from "../store/product/product.slice";
 
 export const ProductCreationContainer:FC = memo(() => {
     const [visible, setVisible] = useState(false)
-    const navigate = useNavigate();
     const onClose = () => {
         setVisible(false)
     }

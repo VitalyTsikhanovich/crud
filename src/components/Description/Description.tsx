@@ -1,6 +1,6 @@
 import React, {FC, memo, useState} from 'react';
-import {DescriptionButton, DescriptionContainer, DescriptionText} from "../assets/styles/product-card.styles";
-import {MAX_LENGTH_DEFAULT} from "../constants/description.constant";
+import {MAX_LENGTH_DEFAULT} from "../../constants/description.constant";
+import {DescriptionButton, DescriptionContainer, DescriptionText} from "./description.styles";
 
 type TDescription = {
     text: string,

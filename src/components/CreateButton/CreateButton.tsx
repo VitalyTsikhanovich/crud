@@ -1,5 +1,5 @@
 import React, {FC, memo} from "react";
-import {Button} from "../assets/styles/createButton.styles";
+import {Button} from "./createButton.styles";
 
 
 type TCreateButton = {

@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 
 export const StyledButton = styled.button`
-  margin-left: 5px;
   padding: 10px 20px;
   font-size: 1rem;
   background-color: #007bff;
@@ -10,6 +9,7 @@ export const StyledButton = styled.button`
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  margin-left: 25%;
 
   &:hover {
     background-color: #47a2fa;

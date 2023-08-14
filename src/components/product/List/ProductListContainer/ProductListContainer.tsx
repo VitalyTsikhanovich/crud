@@ -1,9 +1,10 @@
 import {FC, memo} from "react";
-import {ProductList} from "./ProductList";
-import {useProducts} from "../../../hooks/products.hook";
-import {CreateButton} from "../../CreateButton";
-import {ProductCreationContainer} from "../../ProductCreationContainer";
-import {ContainerProductList} from "../../../assets/styles/productListContainer.styles";
+import {ProductList} from "../ProductList";
+import {useProducts} from "../../../../hooks/products.hook";
+import {CreateButton} from "../../../CreateButton/CreateButton";
+import {ProductCreationContainer} from "../../../ProductCreationContainer";
+import {ContainerProductList} from "./productListContainer.styles";
+
 
 
 export const ProductListContainer  = memo(() => {

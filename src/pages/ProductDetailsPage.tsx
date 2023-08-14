@@ -19,7 +19,7 @@ export const ProductDetailsPage = () => {
 
             <div>
                 <h1>Product Detail</h1>
-                <p>ID: {productId}</p>
+                <p>id {productId}</p>
 
 
                 <p>red</p>

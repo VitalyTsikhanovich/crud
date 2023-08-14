@@ -1,17 +1,17 @@
 import {FC, memo} from "react";
-import {ProductModel} from "../../../models/product.model";
-import {Description} from "../../Description";
+import {ProductModel} from "../../../../models/product.model";
+import {Description} from "../../../Description/Description";
 import {
     ProductCardContainer,
     ProductDetails,
     ProductImage,
     ProductImageElement, ProductPrice, ProductTitle
-} from "../../../assets/styles/product-card.styles";
+} from "./product-card.styles";
 import {useNavigate} from "react-router-dom";
 
 
 type TProductCard = ProductModel
-export const ProductCard: FC<TProductCard> = memo(({id,title, image, price, description}) => {
+export const ProductCard: FC<TProductCard> = memo(({id, title, image, price, description}) => {
 
     const navigate = useNavigate();
 
@@ -26,10 +26,8 @@ export const ProductCard: FC<TProductCard> = memo(({id,title, image, price, desc
             <ProductDetails>
                 <ProductTitle onClick={handleProductClick}>{title}</ProductTitle>
                 <Description text={description}/>
-
             </ProductDetails>
-
-                <ProductPrice>{price}$</ProductPrice>
+            <ProductPrice>{price}$</ProductPrice>
 
 
             {/*<Description>{description}</Description>*/}
